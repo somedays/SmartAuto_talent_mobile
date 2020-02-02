@@ -506,15 +506,285 @@
     <a href="javascript:void(0);" class="btn-floating"><img src="resources/img/icon_talk.png"><span>카톡문의</span></a>
     <a href="#" class="btn-quotation">견적문의</a>
 </div>
+<div class="popup-quotation">
+    <div class="popup-box">
+        <div class="popup-tt">
+            <h2>실시간 견적문의</h2>
+            <button type="button" class="popup-close"><img src="resources/img/popup_close.png"></button>
+        </div>
+        <div class="popup-ctn">
+            <div class="quotation-step">
+                <div class="step-item step1 active">
+                    <h3>STEP.1 차량 선택</h3>
+                    <button type="text" class="step-nav right"><img src="resources/img/step_nav_right.png"></button>
+                </div>
+                <div class="step-item step2">
+                    <h3>STEP.2 모델/옵션 선택</h3>
+                    <button type="text" class="step-nav left"><img src="resources/img/step_nav_left.png"></button>
+                    <button type="text" class="step-nav right"><img src="resources/img/step_nav_right.png"></button>
+                </div>
+                <div class="step-item step3">
+                    <h3>STEP.3 차량 선택</h3>
+                    <button type="text" class="step-nav left"><img src="resources/img/step_nav_left.png"></button>
+                </div>
+            </div>
+            <div class="step-ctn step1 active" id="step_ctn1">
+                <div class="select-item car-brand">
+                    <h3>제조사 선택<button type="button" class="btn-folder"></button></h3>
+                    <ul>
+                        <li><input type="radio" id="check_brand1" name="check_brand" /><label for="check_brand1"><div class="brand-img"><img src="resources/img/sample_logo.png"></div><span>현대</span></label></li>
+                        <li><input type="radio" id="check_brand2" name="check_brand" /><label for="check_brand2"><div class="brand-img"><img src="resources/img/sample_logo.png"></div><span>기아</span></label></li>
+                        <li><input type="radio" id="check_brand3" name="check_brand" /><label for="check_brand3"><div class="brand-img"><img src="resources/img/sample_logo.png"></div><span>르노삼성</span></label></li>
+                        <li><input type="radio" id="check_brand4" name="check_brand" /><label for="check_brand4"><div class="brand-img"><img src="resources/img/sample_logo.png"></div><span>쉐보레</span></label></li>
+                        <li><input type="radio" id="check_brand5" name="check_brand" /><label for="check_brand5"><div class="brand-img"><img src="resources/img/sample_logo.png"></div><span>BMW</span></label></li>
+                        <li><input type="radio" id="check_brand6" name="check_brand" /><label for="check_brand6"><div class="brand-img"><img src="resources/img/sample_logo.png"></div><span>벤츠</span></label></li>
+                        <li><input type="radio" id="check_brand7" name="check_brand" /><label for="check_brand7"><div class="brand-img"><img src="resources/img/sample_logo.png"></div><span>쉐보레</span></label></li>
+                        <li><input type="radio" id="check_brand8" name="check_brand" /><label for="check_brand8"><div class="brand-img"><img src="resources/img/sample_logo.png"></div><span>BMW</span></label></li>
+                        <div class="more-btn"><button type="button">더보기</button></div>
+                    </ul>
+                </div>
+                <div class="select-item car-lists">
+                    <h3>차량 선택<button type="button" class="btn-folder"></button></h3>
+                    <ul>
+                        <li><input type="radio" id="check_car1" name="check_car" />
+                            <label for="check_car1">
+                                <div class="car-image"><img src="http://autoimg.danawa.com/photo/3563/model_600.png"></div>
+                                <div class="car-info">
+                                    <div class="car-name">현대 팰리세이드</div>
+                                    <div class="car-price">3,540 ~ 4,490만원</div>
+                                    <div class="car-desc">복합연비 8.9~12.6 ㎞/ℓ대형SUV휘발유, 경유</div>
+                                </div>
+                            </label>
+                        </li>
+                        <li><input type="radio" id="check_car2" name="check_car" />
+                            <label for="check_car2">
+                                <div class="car-image"><img src="http://autoimg.danawa.com/photo/3563/model_600.png"></div>
+                                <div class="car-info">
+                                    <div class="car-name">현대 팰리세이드</div>
+                                    <div class="car-price">3,540 ~ 4,490만원</div>
+                                    <div class="car-desc">복합연비 8.9~12.6 ㎞/ℓ대형SUV휘발유, 경유</div>
+                                </div>
+                            </label>
+                        </li>
+                        <li><input type="radio" id="check_car3" name="check_car" />
+                            <label for="check_car3">
+                                <div class="car-image"><img src="http://autoimg.danawa.com/photo/3563/model_600.png"></div>
+                                <div class="car-info">
+                                    <div class="car-name">현대 팰리세이드</div>
+                                    <div class="car-price">3,540 ~ 4,490만원</div>
+                                    <div class="car-desc">복합연비 8.9~12.6 ㎞/ℓ대형SUV휘발유, 경유</div>
+                                </div>
+                            </label>
+                        </li>
+                        <li><input type="radio" id="check_car4" name="check_car" />
+                            <label for="check_car4">
+                                <div class="car-image"><img src="http://autoimg.danawa.com/photo/3563/model_600.png"></div>
+                                <div class="car-info">
+                                    <div class="car-name">현대 팰리세이드</div>
+                                    <div class="car-price">3,540 ~ 4,490만원</div>
+                                    <div class="car-desc">복합연비 8.9~12.6 ㎞/ℓ대형SUV휘발유, 경유</div>
+                                </div>
+                            </label>
+                        </li>
+                        <div class="more-btn"><button type="button">더보기</button></div>
+                    </ul>
+                </div>
+                <div class="popup-footer">
+                    <div class="footer-btnarea"><button type="button" class="quotation-btn step1">다음</button></div>
+                </div>
+            </div>
+            <div class="step-ctn step2" id="step_ctn2">
+                <div class="select-item car-price">
+                    <div class="car-price">
+                        <div class="car-image"><img src="http://autoimg.danawa.com/photo/3563/model_600.png"></div>
+                        <div class="car-info">
+                            <strong>현대 더 뉴 그랜저 hybrid</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="select-item with_price">
+                    <h3>등급 선택<button type="button" class="btn-folder"></button></h3>
+                    <ul>
+                        <li><input type="radio" id="check_grade1" name="check_grade" /><label for="check_grade1"><span>2020년형 가솔린 2.5 프리미엄</span><strong>345,000,000원</strong></label></li>
+                        <li><input type="radio" id="check_grade2" name="check_grade" /><label for="check_grade2"><span>2020년형 가솔린 2.5 프리미엄</span><strong>345,000,000원</strong></label></li>
+                        <li><input type="radio" id="check_grade3" name="check_grade" /><label for="check_grade3"><span>2020년형 가솔린 2.5 프리미엄</span><strong>345,000,000원</strong></label></li>
+                        <li><input type="radio" id="check_grade4" name="check_grade" /><label for="check_grade4"><span>2020년형 가솔린 2.5 프리미엄</span><strong>345,000,000원</strong></label></li>
+                        <li><input type="radio" id="check_grade5" name="check_grade" /><label for="check_grade5"><span>2020년형 가솔린 2.5 프리미엄</span><strong>345,000,000원</strong></label></li>
+                        <li><input type="radio" id="check_grade6" name="check_grade" /><label for="check_grade6"><span>2020년형 가솔린 2.5 프리미엄</span><strong>345,000,000원</strong></label></li>
+                        <li><input type="radio" id="check_grade7" name="check_grade" /><label for="check_grade7"><span>2020년형 가솔린 2.5 프리미엄</span><strong>345,000,000원</strong></label></li>
+                        <li><input type="radio" id="check_grade8" name="check_grade" /><label for="check_grade8"><span>2020년형 가솔린 2.5 프리미엄</span><strong>345,000,000원</strong></label></li>
+                        <li><input type="radio" id="check_grade9" name="check_grade" /><label for="check_grade9"><span>2020년형 가솔린 2.5 프리미엄</span><strong>345,000,000원</strong></label></li>
+                    </ul>
+                </div>
+                <div class="select-item car-option with_price">
+                    <h3>옵션 선택<button type="button" class="btn-folder"></button></h3>
+                    <ul>
+                        <li><input type="checkbox" id="check_option1" name="check_option" /><label for="check_option1"><span>옵션을 선택 하세요.</span><strong>345,000,000원</strong></label></li>
+                        <li><input type="checkbox" id="check_option2" name="check_option" /><label for="check_option2"><span>옵션을 선택 하세요.</span><strong>345,000,000원</strong></label></li>
+                        <li><input type="checkbox" id="check_option3" name="check_option" /><label for="check_option3"><span>옵션을 선택 하세요.</span><strong>345,000,000원</strong></label></li>
+                        <li><input type="checkbox" id="check_option4" name="check_option" /><label for="check_option4"><span>옵션을 선택 하세요.</span><strong>345,000,000원</strong></label></li>
+                        <li><input type="checkbox" id="check_option5" name="check_option" /><label for="check_option5"><span>옵션을 선택 하세요.</span><strong>345,000,000원</strong></label></li>
+                        <li><input type="checkbox" id="check_option6" name="check_option" /><label for="check_option6"><span>옵션을 선택 하세요.</span><strong>345,000,000원</strong></label></li>
+                        <li><input type="checkbox" id="check_option7" name="check_option" /><label for="check_option7"><span>옵션을 선택 하세요.</span><strong>345,000,000원</strong></label></li>
+                        <li><input type="checkbox" id="check_option8" name="check_option" /><label for="check_option8"><span>옵션을 선택 하세요.</span><strong>345,000,000원</strong></label></li>
+                        <li><input type="checkbox" id="check_option9" name="check_option" /><label for="check_option9"><span>옵션을 선택 하세요.</span><strong>345,000,000원</strong></label></li>
+                        <li><input type="checkbox" id="check_option10" name="check_option" /><label for="check_option10"><span>옵션을 선택 하세요.</span><strong>345,000,000원</strong></label></li>
+                        <li><input type="checkbox" id="check_option11" name="check_option" /><label for="check_option11"><span>옵션을 선택 하세요.</span><strong>345,000,000원</strong></label></li>
+                    </ul>
+                </div>
+                <div class="select-item car-color">
+                    <h3>색상 선택<button type="button" class="btn-folder"></button></h3>
+                    <ul>
+                        <li><input type="radio" id="color_gp1" name="color_name"><label for="color_gp1"><div class="color-box" style="background-color:#ffffff"></div><span>화이트 크림 (WC9)</span></label></li>
+                        <li><input type="radio" id="color_gp2" name="color_name"><label for="color_gp2"><div class="color-box" style="background-color:#323232"></div><span>Color Name</span></label></li>
+                        <li><input type="radio" id="color_gp3" name="color_name"><label for="color_gp3"><div class="color-box" style="background-color:#323232"></div><span>Color Name</span></label></li>
+                        <li><input type="radio" id="color_gp4" name="color_name"><label for="color_gp4"><div class="color-box" style="background-color:#323232"></div><span>Color Name</span></label></li>
+                        <li><input type="radio" id="color_gp5" name="color_name"><label for="color_gp5"><div class="color-box" style="background-color:#323232"></div><span>Color Name</span></label></li>
+                        <li><input type="radio" id="color_gp6" name="color_name"><label for="color_gp6"><div class="color-box" style="background-color:#323232"></div><span>Color Name</span></label></li>
+                    </ul>
+                </div>
+                <div class="popup-footer">
+                    <div class="footer-btnarea"><button type="button" class="quotation-btn step2">다음</button></div>
+                </div>
+            </div>
+            <div class="step-ctn step3" id="step_ctn3">
+                <div class="select-item car-price">
+                    <h3>차량가격 (옵션 포함)</h3>
+                    <div class="car-price">
+                        <div class="car-image"><img src="http://autoimg.danawa.com/photo/3563/model_600.png"></div>
+                        <div class="car-info">
+                            <strong>현대 더 뉴 그랜저 hybrid</strong>
+                            <span>2020년형 가솔린 2.5 프리미엄 초이스</span>
+                        </div>
+                        <div class="price-info">
+                            <strong>400,000,000</strong>
+                            <span>원</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="select-item form-area">
+                    <h3>대여 조건 선택</h3>
+                    <div class="car-form select-list">
+                        <div class="form-item w50"><select><option>이용방법 선택</option></select></div>
+                        <div class="form-item w50"><select><option>이용기간 선택</option></select></div>
+                        <div class="form-item w50"><select><option>보증금 선택</option></select></div>
+                        <div class="form-item w50"><select><option>7,000,000원</option></select></div>
+                        <div class="form-item w50"><select><option>선수금 선택</option></select></div>
+                        <div class="form-item w50"><select><option>7,000,000원</option></select></div>
+                        <div class="form-item w50"><select><option>연간 주행거리 선택</option></select></div>
+                        <div class="form-item w50"><select><option>상담 가능시간 선택</option></select></div>
+                    </div>
+                </div>
+                <div class="select-item form-area">
+                    <h3>고객 정보 입력 ( * 필수 )</h3>
+                    <div class="car-form input-list">
+                        <div class="form-item req"><label for="user_name">이름(회사명)</label><input type="text" id="user_name"></div>
+                        <div class="form-item req"><label for="user_tel">전화번호('-'제외)</label><input type="text" id="user_tel"></div>
+                        <div class="form-item"><label for="user_mail">E-MAIL</label><input type="text" id="user_mail"></div>
+                        <div class="form-item"><label for="user_memo">상담메모</label><input type="text" id="user_memo"></div>
+                    </div>
+                </div>
+                <div class="popup-footer">
+                    <div class="user-agree"><input type="checkbox" id="user_agree" checked><label for="user_agree">개인정보 수집 이용등에 대한 동의</label></div>
+                    <div class="footer-btnarea"><button type="button" class="quotation-submit">견적문의</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="popup-policy">
+    <div class="popup-box">
+        <div class="popup-tt">
+            <h2>개인정보 수집·이용 및 제공 동의</h2>
+            <button type="button" class="popup-close"><img src="resources/img/popup_close.png"></button>
+        </div>
+        <div class="popup-ctn">
+            <div class="policy-check check-all">
+                <input type="checkbox" id="policy_check_all"><label for="policy_check_all">전체동의</label>
+            </div>
+            <div class="policy-box">
+                <h3>개인정보 수집 및 이용 동의(필수)</h3>
+                <div class="policy-ctn">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>목적</th>
+                                <th>항목</th>
+                                <th>보유기간</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1. 서비스 제공에 관한 계약 이행<br>2. 회원의 관리</td>
+                                <td>성명, 전화번호(휴대폰), 이메일주소</td>
+                                <td>- 재화 및 서비스 공급완료시<br>- 회원 탈퇴시</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>※ 회사가 ㈜오토다이렉트카(http://autodirectcar.com)을 통하여 제공하는 서비스를 고객님이 이용하도록 하기 위해서 그 수집 및 이용이 필요한 최소한의 개인정보이므로 해당 항목에 동의를 해 주셔야 서비스 이용이 가능합니다.</p>
+                </div>
+                <div class="policy-check"><input type="checkbox" id="policy_check_1"><label for="policy_check_1">동의 합니다.</label></div>
+            </div>
+            <div class="policy-box">
+                <h3>개인정보 수집 및 이용 동의(선택)</h3>
+                <div class="policy-ctn">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>목적</th>
+                                <th>항목</th>
+                                <th>보유기간</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>3. 광고, 이벤트 및 프로모션<br>4. 고충처리</td>
+                                <td>주소, 전화번호(자택, 휴대폰), 이메일주소</td>
+                                <td>- 재화 및 서비스 공급완료시<br>- 회원 탈퇴시</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>※ 회사가 ㈜오토다이렉트카(http://autodirectcar.com)을 통하여 제공하는 서비스를 고객님이 보다 원활하게 이용하도록 하기 위해서 그 수집 및 이용이 필요한 개인정보이므로 해당 항목에 동의를 거부하시는 경우에도 위 개인정보를 수집 및 이용하는 서비스를 제외하고 나머지 서비스에 대해서는 이용이 가능합니다.</p>
+                </div>
+                <div class="policy-check"><input type="checkbox" id="policy_check_2"><label for="policy_check_2">동의 합니다.</label></div>
+            </div>
+            <div class="policy-box">
+                <h3>개인정보 처리 위탁에 대한 동의(선택)</h3>
+                <div class="policy-ctn">
+                    <table>
+                        <colgroup>
+                            <col>
+                            <col width="100px">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>목적</th>
+                                <th>항목</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>레드캡, 농협캐피탈(렌트), 농협캐피탈(리스), 나우카, 지모터스, 롯데렌터카, 롯데캐피탈,롯데오토리스, 메리츠캐피탈, 미래에셋캐피탈, 삼성카드, 신한카드, 아마존카, 아주캐피탈, 알페라, 오릭스, 우리카드, 조이렌트카, 하나캐피탈, 하모니렌트카, 한진렌터카, 현대캐피탈, 효성캐피탈, AJ렌터카, BNK캐피탈, CNH프리미어렌탈, DGB캐피탈, JB우리캐피탈, KB캐피탈(인천지점), KB캐피탈(수원지점), "KDB캐피탈, (산은캐피탈)", SK렌터카</td>
+                                <td>렌터카 중개 및 알선<br>(장기 렌터카/리스 서비스 제공)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="policy-check"><input type="checkbox" id="policy_check_3"><label for="policy_check_3">동의 합니다.</label></div>
+            </div>
+            <div class="popup-footer">
+                <div class="footer-btnarea"><button type="button" class="policy-submit">확인</button></div>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="resources/js/vticker-min.js"></script>
 <script src="resources/js/waypoints.min.js"></script>
 <script src="resources/js/counterup.min.js"></script>
 <script src="resources/js/owl.carousel.min.js"></script>
-<script src="resources/js/jquery.mCustomScrollbar.concat.min.js"></script>
 <script src="resources/js/jquery.pagenav.js"></script>
-<script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=83bfuniegk&amp;submodules=panorama,geocoder,drawing,visualization"></script>
 <script>
 $(window).scroll(function(){
       banner = $('.aside-banner'),
@@ -530,13 +800,6 @@ $(window).scroll(function(){
 
 $(document).ready(function(){
 
-  $('.youtube-list .scrollbar-inner').mCustomScrollbar();
-
-
-  $('.select-item ul').mCustomScrollbar();
-
-  $('.popup-ctn').mCustomScrollbar();
- 
   $('.count-num').counterUp({
         delay: 10,
         time: 1000
@@ -704,6 +967,21 @@ $('.close-nav').click(function() {
     $('.nav').removeClass('on');
 });
 
+$('.btn-folder').click(function() {
+    $(this).parent().toggleClass('close');
+});
+
+$('.popup-quotation .popup-close').click(function() {
+    $('.popup-quotation').removeClass('on');
+});
+
+$('.quotation-submit').click(function() {
+    $('.popup-policy').addClass('on');
+});
+
+$('.popup-policy .popup-close').click(function() {
+    $('.popup-policy').removeClass('on');
+});
 
 $('.nav li a').click(function(e) {
     // On-page links
@@ -721,6 +999,44 @@ $('.nav li a').click(function(e) {
     $('.nav li a').removeClass('active');
     $(this).addClass('active');
 });
+
+$('.step-item.step1 .step-nav.right').click(function(){
+    $(this).parent().removeClass('active');
+    $('.step-item.step2').addClass('active');
+    $('.step-ctn.step1').removeClass('active');
+    $('.step-ctn.step2').addClass('active');
+});
+$('.quotation-btn.step1').click(function(){
+    $('.step-item.step1').removeClass('active');
+    $('.step-item.step2').addClass('active');
+    $('.step-ctn.step1').removeClass('active');
+    $('.step-ctn.step2').addClass('active');
+});
+$('.step-item.step2 .step-nav.left').click(function(){
+    $(this).parent().removeClass('active');
+    $('.step-item.step1').addClass('active');
+    $('.step-ctn.step2').removeClass('active');
+    $('.step-ctn.step1').addClass('active');
+});
+$('.step-item.step2 .step-nav.right').click(function(){
+    $(this).parent().removeClass('active');
+    $('.step-item.step3').addClass('active');
+    $('.step-ctn.step2').removeClass('active');
+    $('.step-ctn.step3').addClass('active');
+});
+$('.quotation-btn.step2').click(function(){
+    $('.step-item.step2').removeClass('active');
+    $('.step-item.step3').addClass('active');
+    $('.step-ctn.step2').removeClass('active');
+    $('.step-ctn.step3').addClass('active');
+});
+$('.step-item.step3 .step-nav.left').click(function(){
+    $(this).parent().removeClass('active');
+    $('.step-item.step2').addClass('active');
+    $('.step-ctn.step3').removeClass('active');
+    $('.step-ctn.step2').addClass('active');
+});
+
 
 </script>
 </body>
