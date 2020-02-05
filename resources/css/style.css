@@ -122,7 +122,7 @@ input,button,select,textarea {outline:none;font-family:'Noto Sans KR', sans-seri
 .main-item {position:relative;text-align:center;}
 .main-item img {margin:0 auto;}
 .main-item {background-position:50% 0;background-repeat:no-repeat}
-.main-image-media {position:absolute;top:385px;left:50%;margin-left:-168px;}
+.main-image-media {position:absolute;bottom:35px;left:50%;margin-left:-20px;}
 
 .main-image.owl-carousel .owl-dots {position:absolute;bottom:5px;left:50%;transform:translateX(-50%);}
 .main-image.owl-carousel .owl-dots button{margin:0;}

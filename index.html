@@ -31,8 +31,8 @@
                 <li><a href="#allcar"><span>전 차종 견적문의</span></a></li>
                 <li><a href="#schedule"><span>연애인 렌터카</span></a></li>
                 <li><a href="#review"><span>출고후기</span></a></li>
-                <li><a href="#"><span>견적문의</span></a></li>
-                <div class="nav-info"><strong>1644 - 2858</strong><span>평일 : 10:00 ~ 18:30 / 주말 및 공휴일 : 13:00 ~ 17:00</span></div>
+                <li><a href="#quotation"><span>견적문의</span></a></li>
+                <div class="nav-info"><a href="tel:16442858"><strong>1644 - 2858</strong><span>평일 : 10:00 ~ 18:30 / 주말 및 공휴일 : 13:00 ~ 17:00</span></a></div>
             </ul>
         </div>
     </div>
@@ -45,7 +45,7 @@
         <div class="main-item">
             <img src="resources/img/main_img_03.png">
             <div class="main-image-media">
-                <iframe width="359" height="202" src="https://www.youtube.com/embed/6MqLDtNL-_Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="180" height="100" src="https://www.youtube.com/embed/6MqLDtNL-_Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
     </div>
@@ -491,7 +491,7 @@
     <div class="footer-wrap">
         <div class="footer-tab-item" id="autodirectcar_tab">
             <div class="company-info">
-                <p class="company-tt">연예인렌트카  1544-3256</p>
+                <p class="company-tt">연예인렌트카  1544-2858</p>
                 <p>법인상호 : 연예인렌트카</p>
                 <p>주소 : 경기도 안산시 단원구 원포공원1로 35, 301호(초지동)</p>
                 <p>대표번호 : 1644-2858 | FAX : 02-3452-1070 | 대표 : 유우재</p>
@@ -503,8 +503,8 @@
 </div>
 <div class="floating">
     <a href="tel:1544-3256" class="btn-floating"><img src="resources/img/icon_tel.png"><span>전화문의</span></a>
-    <a href="javascript:void(0);" class="btn-floating"><img src="resources/img/icon_talk.png"><span>카톡문의</span></a>
-    <a href="#" class="btn-quotation">견적문의</a>
+    <a href="http://pf.kakao.com/_rdwbxl" class="btn-floating"><img src="resources/img/icon_talk.png"><span>카톡문의</span></a>
+    <a href="#quotation" class="btn-quotation">견적문의</a>
 </div>
 <div class="popup-quotation">
     <div class="popup-box">
@@ -999,6 +999,24 @@ $('.nav li a').click(function(e) {
     $('.nav li a').removeClass('active');
     $(this).addClass('active');
 });
+
+$('.floating .btn-quotation').click(function(e) {
+    // On-page links
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+        e.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top - 60
+        }, 900 );
+      }
+    }
+    $('.nav').removeClass('on');
+    $('.nav li a').removeClass('active');
+    $(this).addClass('active');
+});
+
 
 $('.step-item.step1 .step-nav.right').click(function(){
     $(this).parent().removeClass('active');
